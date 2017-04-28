@@ -1,0 +1,27 @@
+{
+  "name": "bam",
+  "version": "1.0.0",
+  "description": "@jongacnik starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "bankai start src -w true"
+  },
+  "keywords": [
+    "starter",
+    "kit",
+    "bam",
+    "go"
+  ],
+  "author": "Jon Gacnik <jon@folderstudio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^5.4.0",
+    "gr8": "^2.1.6",
+    "lilcss": "0.0.0",
+    "microcomponent": "^3.1.0",
+    "ress": "^1.2.2"
+  },
+  "devDependencies": {
+    "bankai": "^7.5.0"
+  }
+}
