@@ -26,3 +26,10 @@ usage:
 ```bash
 $ bam project-name
 ```
+
+## Todo
+
+- [ ] Build scripts
+- [ ] Write some details
+- [ ] Maybe tweak how styles inserted
+- [ ] Maybe lilcss
