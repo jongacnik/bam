@@ -12,7 +12,7 @@ app.use(function (state, emitter) {
 
 app.route('/', function (state, emit) {
   return html`
-    <body class="fs1-6">
+    <body class="ff-sans fs1-6">
       <h1>Hello</h1>
     </body>
   `
