@@ -1,10 +1,21 @@
-var app = require('choo')()
+var choo = require('choo')
+var html = require('choo/html')
+require('insert-css')(require('./design'))
 
-// plugins
-app.use(require('./plugins/logger'))
+var app = choo()
 
-// views
-app.route('/', require('./views/home'))
+app.use(function (state, emitter) {
+  emitter.on('*', function (messageName, data) {
+    console.log('event', messageName, data)
+  })
+})
 
-// mount
+app.route('/', function (state, emit) {
+  return html`
+    <body class="fs1-6">
+      <h1>Hello</h1>
+    </body>
+  `
+})
+
 app.mount('body')

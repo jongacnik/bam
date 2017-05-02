@@ -4,7 +4,7 @@
   "description": "@jongacnik starter kit",
   "main": "index.js",
   "scripts": {
-    "start": "bankai start src -w true"
+    "start": "budo src/index.js -l -P --base -- -t brfs"
   },
   "keywords": [
     "starter",
@@ -17,11 +17,11 @@
   "dependencies": {
     "choo": "^5.4.0",
     "gr8": "^2.1.6",
-    "lilcss": "0.0.0",
-    "microcomponent": "^3.1.0",
+    "insert-css": "^2.0.0",
     "ress": "^1.2.2"
   },
   "devDependencies": {
-    "bankai": "^7.5.0"
+    "brfs": "^1.4.3",
+    "budo": "^10.0.3"
   }
 }
