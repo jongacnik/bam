@@ -15,7 +15,7 @@
   "author": "Jon Gacnik <jon@folderstudio.com>",
   "license": "MIT",
   "dependencies": {
-    "byo": "^2.0.0",
+    "byo": "^2.1.1",
     "gr8": "^2.1.6",
     "hyperx": "^2.3.0",
     "insert-css": "^2.0.0",
