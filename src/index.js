@@ -1,8 +1,7 @@
-var choo = require('choo')
-var html = require('choo/html')
+var { framework, html } = require('./framework')
 require('insert-css')(require('./design'))
 
-var app = choo()
+var app = framework()
 
 app.use(function (state, emitter) {
   emitter.on('*', function (messageName, data) {
@@ -12,9 +11,9 @@ app.use(function (state, emitter) {
 
 app.route('/', function (state, emit) {
   return html`
-    <body class="ff-sans fs1-6">
-      <h1>Hello</h1>
-    </body>
+    <main class="ff-sans fs1-6">
+      <h1>BAM</h1>
+    </main>
   `
 })
 
