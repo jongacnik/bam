@@ -2,7 +2,7 @@
 
 Starter kit.
 
-**In progress...**
+**Never finished...**
 
 ## Featuring
 
@@ -13,6 +13,18 @@ Starter kit.
 ## Notes
 
 I like to keep it basic. It's easy to swap out the renderers in byo or to swap it out entirely with [choo](https://github.com/yoshuawuyts/choo), as projects require.
+
+### Scripts
+
+```bash
+# start dev
+npm start
+
+# build dist
+npm run build
+```
+
+### Alias
 
 I create a bash alias for cloning this repo:
 
@@ -29,7 +41,4 @@ $ bam project-name
 
 ## Todo
 
-- [ ] Build scripts
-- [ ] Write some details
-- [ ] Maybe tweak how styles inserted
-- [ ] Maybe lilcss
+- [ ] Force bundle refresh on `design.js` update

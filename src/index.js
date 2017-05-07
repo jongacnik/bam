@@ -1,5 +1,5 @@
 var { framework, html } = require('./framework')
-require('insert-css')(require('./design'))
+require('insert-css')(require('browserify-exec')('node src/design.js'))
 
 var app = framework()
 
