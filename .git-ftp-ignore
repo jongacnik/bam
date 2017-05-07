@@ -5,5 +5,5 @@
 .git-ftp-include
 .gitlab-ci.yml
 
-bin/*
-src/*
+bin
+src
