@@ -6,7 +6,7 @@
   "scripts": {
     "start": "budo src/index.js -l -P --base -o -- -t browserify-exec",
     "build": "mkdir -p dist && [ -f dist/index.html ] || create-html -c bundle.css -s bundle.js | tr -d '\n' > dist/index.html && browserify src/index.js -t browserify-exec -p [ css-extract -o dist/tmp.css ] -g unassertify -g [ babelify --presets [ es2015 ] ] -g uglifyify -p bundle-collapser/plugin | uglifyjs > dist/bundle.js && cat dist/tmp.css | postcss --use autoprefixer | cssnano --discardComments.removeAll > dist/bundle.css && rm dist/tmp.css",
-    "deploy": "source config.file; bin/deploy"
+    "deploy": "bin/deploy"
   },
   "keywords": [
     "starter",
