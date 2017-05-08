@@ -22,6 +22,17 @@ npm start
 
 # build dist
 npm run build
+
+# deploy
+npm run deploy
+```
+
+### Deploy
+
+`npm run deploy` expects a deploy script located at `bin/deploy`. I use [git-ftp](https://github.com/git-ftp/git-ftp) and my deploy script looks something like:
+
+```bash
+git ftp push --user $USERNAME --passwd $PASSWORD ftp://127.0.0.1/location
 ```
 
 ### Alias
@@ -36,7 +47,7 @@ alias bam='git clone https://github.com/jongacnik/bam'
 usage:
 
 ```bash
-$ bam project-name
+bam project-name
 ```
 
 ## Todo
