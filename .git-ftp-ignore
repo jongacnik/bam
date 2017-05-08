@@ -4,6 +4,5 @@
 .git-ftp-ignore
 .git-ftp-include
 .gitlab-ci.yml
-
-bin
+package.json
 src
