@@ -1,7 +1,5 @@
 # ❗️️b❗️a❗️m❗️
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jongacnik/bam.svg)](https://greenkeeper.io/)
-
 Starter kit.
 
 **Never finished...**
