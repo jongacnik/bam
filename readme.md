@@ -55,3 +55,4 @@ bam project-name
 ## Todo
 
 - [ ] Force bundle refresh on `design.js` update
+- [ ] Server render
