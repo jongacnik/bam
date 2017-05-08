@@ -8,6 +8,7 @@ Starter kit.
 
 - [byo](https://github.com/jongacnik/byo) + [preact](https://github.com/developit/preact)
 - [gr8](https://github.com/jongacnik/gr8) + [ress](https://github.com/filipelinhares/ress)
+- [git-ftp](https://github.com/git-ftp/git-ftp) deploy
 - scaffolding
 
 ## Notes
