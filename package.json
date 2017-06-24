@@ -17,12 +17,10 @@
   "author": "Jon Gacnik <jon@folderstudio.com>",
   "license": "MIT",
   "dependencies": {
-    "byo": "^2.1.1",
+    "choo": "^5.6.2",
     "gr8": "^2.1.6",
-    "hyperx": "^2.3.0",
     "insert-css": "^2.0.0",
     "lilcss": "0.0.0",
-    "preact": "^8.1.0",
     "ress": "^1.2.2"
   },
   "devDependencies": {

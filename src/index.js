@@ -1,7 +1,8 @@
-var { framework, html } = require('./framework')
+var choo = require('choo')
+var html = require('choo/html')
 require('insert-css')(require('browserify-exec')('node src/design.js'))
 
-var app = framework()
+var app = choo()
 
 app.use(function (state, emitter) {
   emitter.on('*', function (messageName, data) {
@@ -11,9 +12,9 @@ app.use(function (state, emitter) {
 
 app.route('/', function (state, emit) {
   return html`
-    <main class="ff-sans fs1-6">
+    <body class="ff-sans fs1-6">
       <h1>BAM</h1>
-    </main>
+    </body>
   `
 })
 

@@ -2,18 +2,18 @@
 
 Starter kit.
 
-**Never finished...**
+**Always wip...**
 
 ## Featuring
 
-- [byo](https://github.com/jongacnik/byo) + [preact](https://github.com/developit/preact)
+- [choo](https://github.com/jongacnik/byo)
 - [gr8](https://github.com/jongacnik/gr8) + [ress](https://github.com/filipelinhares/ress)
 - [git-ftp](https://github.com/git-ftp/git-ftp) deploy
 - scaffolding
 
 ## Notes
 
-I like to keep it basic. It's easy to swap out the renderers in byo or to swap it out entirely with [choo](https://github.com/yoshuawuyts/choo), as projects require.
+I like to keep it basic. It's easy to swap out choo with [rooch](https://github.com/yoshuawuyts/rooch) or [byo](https://github.com/jongacnik/byo) as projects require.
 
 ### Scripts
 
