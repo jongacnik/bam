@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Publish site to dat
+# Sync site to dat
 
-dat sync dist --no-watch
+dat sync dist

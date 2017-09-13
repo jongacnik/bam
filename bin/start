@@ -3,6 +3,6 @@
 # 1. Budo as dev server
 # 2. Onchange watches style and triggers rebundle
 
-concurrently \
+parallelshell \
   "budo src/index.js -l -P -d src --base -- -t browserify-exec" \
   "onchange 'src/style.js' -- touch src/index.js"

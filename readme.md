@@ -1,21 +1,14 @@
 # ❗️️b❗️a❗️m❗️
 
-Starter kit.
-
-**Always wip...**
+My project boiler plate.
 
 ## Featuring
 
 - [choo](https://github.com/jongacnik/byo)
 - [gr8](https://github.com/jongacnik/gr8) + [ress](https://github.com/filipelinhares/ress)
-- [git-ftp](https://github.com/git-ftp/git-ftp) deploy
-- scaffolding
+- [budo](https://github.com/mattdesl/budo)
 
-## Notes
-
-I like to keep it basic. It's easy to swap out choo with [rooch](https://github.com/yoshuawuyts/rooch) or [byo](https://github.com/jongacnik/byo) as projects require.
-
-### Scripts
+## Scripts
 
 ```bash
 # start dev
@@ -24,21 +17,16 @@ npm start
 # build dist
 npm run build
 
-# deploy
-npm run deploy
+# publish
+npm run publish
 ```
 
-### Deploy
+## Notes
 
-I use [git-ftp](https://github.com/git-ftp/git-ftp) for deploy. A config file is expected specifying some values:
+- Sometimes I swap out choo with [rooch](https://github.com/yoshuawuyts/rooch).
+- The publish command syncs to [dat](https://github.com/datproject/dat). I swap this with other options (like surge, netlify, ftp) as needed.
 
-```bash
-USERNAME=username
-PASSWORD=password
-SERVER=ftp://127.0.0.1/some_location
-```
-
-### Alias
+## Alias
 
 I create a bash alias for cloning this repo:
 
@@ -52,7 +40,3 @@ usage:
 ```bash
 bam project-name
 ```
-
-## Todo
-
-- [ ] Server render

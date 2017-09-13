@@ -6,8 +6,7 @@
   "scripts": {
     "start": "sh bin/start",
     "build": "sh bin/build",
-    "publish": "sh bin/publish",
-    "deploy": "source config; git ftp push --user $USERNAME --passwd $PASSWORD $SERVER"
+    "publish": "sh bin/publish"
   },
   "keywords": [
     "starter",
@@ -36,6 +35,8 @@
     "create-html": "^4.0.0",
     "css-extract": "^1.2.0",
     "cssnano-cli": "^1.0.5",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1",
     "postcss-cli": "^4.1.1",
     "uglifyify": "^4.0.3",
     "unassertify": "^2.0.4"
