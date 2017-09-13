@@ -5,9 +5,6 @@ var lilcss = require('lilcss')
 // include css libs
 var ress = fs.readFileSync('node_modules/ress/ress.css', 'utf8')
 
-// init gr8
-var gr8css = gr8()
-
 // vars
 var fonts = {
   sans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
@@ -27,28 +24,27 @@ borderWeights.forEach(border => {
 })
 
 // add custom utils
+var utils = []
 
-gr8css.add({
+utils.push({
   prop: 'font-family',
-  hyphenate: true,
+  join: '-',
   vals: fonts
 })
 
-gr8css.add({
-  prop: 'color',
-  prefix: 'fc',
-  hyphenate: true,
+utils.push({
+  prop: { fc: 'color' },
+  join: '-',
   vals: colors
 })
 
-gr8css.add({
-  prop: 'background-color',
-  prefix: 'bgc',
-  hyphenate: true,
+utils.push({
+  prop: { bgc: 'background-color' },
+  join: '-',
   vals: colors
 })
 
-gr8css.add({
+utils.push({
   prop: [
     'border',
     'border-top',
@@ -60,46 +56,48 @@ gr8css.add({
 })
 
 // custom css
-var custom = function (colors, fonts) {
-  return `
-    html {
-      font-size: 62.5%;
-    }
+var custom = `
+  html {
+    font-size: 62.5%;
+  }
 
-    body {
-      -webkit-font-smoothing: antialiased;
-    }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
 
-    h1, h2, h3, h4, h5, h6, h7 {
-      font-size: inherit;
-      font-weight: inherit;
-      font-style: inherit;
-    }
+  h1, h2, h3, h4, h5, h6, h7 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+  }
 
-    button, input {
-      outline: none;
-    }
+  button, input {
+    outline: none;
+  }
 
-    ul, ol, li { 
-      list-style: none;
-    }
+  ul, ol, li { 
+    list-style: none;
+  }
 
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 
-    img, video {
-      width: 100%;
-      height: auto;
-    }
-  `
-}
+  img, video {
+    width: 100%;
+    height: auto;
+  }
+`
 
-var lilgr8 = lilcss(gr8css.toString(), [
+var gr8css = gr8({
+  utils: utils
+})
+
+var lilgr8 = lilcss(gr8css, [
   'src/index.js'
 ])
 
-var css = ress + lilgr8 + custom()
+var css = ress + lilgr8 + custom
 
 process.stdout.write(css)

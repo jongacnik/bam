@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Publish site to dat
+
+dat sync dist --no-watch
