@@ -1,7 +1,7 @@
-var choo = require('choo')
-var log = require('choo-log')
-var html = require('choo/html')
 require('insert-css')(require('browserify-exec')('node src/style.js'))
+var choo = require('choo')
+var html = require('choo/html')
+var log = require('choo-log')
 
 var app = choo()
 app.use(log())
