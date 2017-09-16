@@ -1,6 +1,6 @@
-# ❗️️b❗️a❗️m❗️
+<h1 align="center">❗️️b❗️a❗️m❗</h1>
 
-My project boiler plate.
+My app boiler plate.
 
 ## Featuring
 
@@ -40,3 +40,7 @@ usage:
 ```bash
 bam project-name
 ```
+
+## See Also
+
+- [bam-module](https://github.com/jongacnik/bam-module)

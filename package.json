@@ -1,7 +1,7 @@
 {
   "name": "bam",
   "version": "1.1.0",
-  "description": "@jongacnik starter kit",
+  "description": "@jongacnik app boiler plate",
   "main": "index.js",
   "scripts": {
     "start": "sh bin/start",
