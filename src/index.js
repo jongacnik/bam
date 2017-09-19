@@ -1,7 +1,9 @@
-require('insert-css')(require('browserify-exec')('node src/style.js'))
 var choo = require('choo')
 var html = require('choo/html')
 var log = require('choo-log')
+var css = require('sheetify')
+
+css('./style.js')
 
 var app = choo()
 app.use(log())

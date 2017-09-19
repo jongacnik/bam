@@ -4,5 +4,5 @@
 # 2. Onchange watches style and triggers rebundle
 
 parallelshell \
-  "budo src/index.js -l -P -d src --base -- -t browserify-exec" \
+  "budo src/index.js -l -P -d src --base -- -t sheetify" \
   "onchange 'src/style.js' -- touch src/index.js"

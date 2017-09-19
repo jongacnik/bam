@@ -98,6 +98,4 @@ var lilgr8 = lilcss(gr8css, [
   'src/index.js'
 ])
 
-var css = ress + lilgr8 + custom
-
-process.stdout.write(css)
+module.exports = ress + lilgr8 + custom
