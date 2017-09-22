@@ -5,6 +5,11 @@ var lilcss = require('lilcss')
 // include css libs
 var ress = fs.readFileSync('node_modules/ress/ress.css', 'utf8')
 
+// gr8 opts
+var opts = {
+
+}
+
 // vars
 var fonts = {
   sans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
@@ -24,27 +29,27 @@ borderWeights.forEach(border => {
 })
 
 // add custom utils
-var utils = []
+opts.utils = []
 
-utils.push({
+opts.utils.push({
   prop: 'font-family',
   join: '-',
   vals: fonts
 })
 
-utils.push({
+opts.utils.push({
   prop: { fc: 'color' },
   join: '-',
   vals: colors
 })
 
-utils.push({
+opts.utils.push({
   prop: { bgc: 'background-color' },
   join: '-',
   vals: colors
 })
 
-utils.push({
+opts.utils.push({
   prop: [
     'border',
     'border-top',
@@ -90,9 +95,7 @@ var custom = `
   }
 `
 
-var gr8css = gr8({
-  utils: utils
-})
+var gr8css = gr8(opts)
 
 var lilgr8 = lilcss(gr8css, [
   'src/index.js'
