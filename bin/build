@@ -16,6 +16,7 @@ mkdir -p dist && \
     -t sheetify \
     -p [ css-extract -o dist/tmp.css ] \
     -g unassertify \
+    -g yo-yoify \
     -g [ babelify --presets [ es2015 ] ] \
     -g uglifyify \
     -p bundle-collapser/plugin > dist/bundle.js && \
