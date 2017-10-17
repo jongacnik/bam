@@ -17,9 +17,9 @@
   "author": "Jon Gacnik <jon@folderstudio.com>",
   "license": "MIT",
   "dependencies": {
-    "choo": "^6.0.1",
+    "choo": "^6.4.2",
     "choo-log": "^7.2.1",
-    "gr8": "^3.1.0",
+    "gr8": "^3.1.1",
     "lilcss": "0.0.0",
     "ress": "^1.2.2",
     "sheetify": "^6.2.0"
