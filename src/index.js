@@ -1,12 +1,13 @@
 var choo = require('choo')
 var html = require('choo/html')
-var log = require('choo-log')
 var css = require('sheetify')
 
 css('./style.js')
 
 var app = choo()
-app.use(log())
+if (process.env.NODE_ENV !== 'production') {
+  app.use(require('choo-devtools')())
+}
 app.route('/', mainView)
 app.mount('body')
 

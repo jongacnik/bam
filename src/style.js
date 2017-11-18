@@ -1,6 +1,5 @@
 var fs = require('fs')
 var gr8 = require('gr8')
-var lilcss = require('lilcss')
 
 // include css libs
 var ress = fs.readFileSync('node_modules/ress/ress.css', 'utf8')
@@ -97,8 +96,4 @@ var custom = `
 
 var gr8css = gr8(opts)
 
-var lilgr8 = lilcss(gr8css, [
-  'src/index.js'
-])
-
-module.exports = ress + lilgr8 + custom
+module.exports = ress + gr8css + custom
