@@ -4,9 +4,8 @@
   "description": "@jongacnik app boiler plate",
   "main": "index.js",
   "scripts": {
-    "start": "sh bin/start",
-    "build": "sh bin/build",
-    "publish": "sh bin/publish"
+    "start": "bankai start index.js",
+    "build": "bankai build index.js"
   },
   "keywords": [
     "starter",
@@ -27,6 +26,7 @@
     "autoprefixer": "^7.1.6",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
+    "bankai": "^9.0.0-rc12",
     "browserify": "^14.5.0",
     "budo": "^10.0.4",
     "bundle-collapser": "^1.3.0",

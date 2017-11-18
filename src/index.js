@@ -9,7 +9,6 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-devtools')())
 }
 app.route('/', mainView)
-app.mount('body')
 
 function mainView (state, emit) {
   return html`
@@ -18,3 +17,5 @@ function mainView (state, emit) {
     </body>
   `
 }
+
+module.exports = app
