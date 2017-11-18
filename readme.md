@@ -4,9 +4,9 @@ My app boiler plate.
 
 ## Featuring
 
-- [choo](https://github.com/jongacnik/byo)
+- [choo](https://github.com/choojs/choo)
 - [gr8](https://github.com/jongacnik/gr8) + [ress](https://github.com/filipelinhares/ress)
-- [budo](https://github.com/mattdesl/budo)
+- [bankai](https://github.com/choojs/bankai)
 
 ## Scripts
 
@@ -16,15 +16,11 @@ npm start
 
 # build dist
 npm run build
-
-# publish
-npm run publish
 ```
 
 ## Notes
 
 - Sometimes I swap out choo with [rooch](https://github.com/yoshuawuyts/rooch).
-- The publish command syncs to [dat](https://github.com/datproject/dat). I swap this with other options (like surge, netlify, ftp) as needed.
 
 ## Alias
 
