@@ -23,6 +23,6 @@
     "sheetify": "^6.2.0"
   },
   "devDependencies": {
-    "bankai": "^9.0.0-rc12"
+    "bankai": "^9.0.2"
   }
 }
