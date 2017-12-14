@@ -22,7 +22,7 @@ npm run build
 
 ## Notes
 
-- Sometimes I swap out choo with [rooch](https://github.com/yoshuawuyts/rooch).
+- Sometimes I swap out choo with [choop](https://github.com/yoshuawuyts/choop).
 
 ## Alias
 
