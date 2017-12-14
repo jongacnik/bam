@@ -18,6 +18,8 @@ npm start
 npm run build
 ```
 
+*Assumes [bankai](https://github.com/choojs/bankai) installed globally*
+
 ## Notes
 
 - Sometimes I swap out choo with [rooch](https://github.com/yoshuawuyts/rooch).
